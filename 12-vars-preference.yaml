@@ -7,7 +7,7 @@
   - course.yaml
   vars_prompt:
   - name: GREET
-    prompt: Enter the values
+    prompt: Enter the value
     private: false
   tasks:
   - name: print the variable
@@ -15,3 +15,5 @@
       GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
+
+#1. Command line or args
